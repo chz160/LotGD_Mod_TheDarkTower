@@ -5,7 +5,10 @@ function thedarktower_getmoduleinfo() {
                 "author"=>"`@c`#h`$z`%1`^6`Q0",
                 "version"=>"1.0",
                 "category"=>"Miscellaneous",
-                "download"=>"http://dragonprime.net/index.php?module=Downloads",
+                "download"=>"https://github.com/chz160/LotGD_Mod_TheDarkTower",
+				"prefs"=>array(
+					"The Dark Tower Preferences,title"
+				)
         );
         return $info;
 }
@@ -25,6 +28,7 @@ function thedarktower_dohook($hookname,$args) {
 
         switch($hookname){
         case "newday":
+				require_once("modules/thedarktower/randallflagg.php");
                 thedarktower_randallflagg_setnewname();
                 break;
         }

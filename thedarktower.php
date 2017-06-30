@@ -2,7 +2,7 @@
 function thedarktower_getmoduleinfo() {
         $info = array(
                 "name"=>"The Dark Tower",
-                "author"=>"`@c`#h`$z`%1`^6`Q0",
+                "author"=>"`@c`#h`\$z`%1`^6`Q0",
                 "version"=>"1.0",
                 "category"=>"Miscellaneous",
                 "download"=>"https://github.com/chz160/LotGD_Mod_TheDarkTower",
@@ -28,9 +28,9 @@ function thedarktower_dohook($hookname,$args) {
 
         switch($hookname){
         case "newday":
-				require_once("modules/thedarktower/randallflagg.php");
-                thedarktower_randallflagg_setnewname();
-                break;
+			require_once("modules/thedarktower/randallflagg.php");
+			thedarktower_randallflagg_setnewname();
+			break;
         }
 
         return $args;

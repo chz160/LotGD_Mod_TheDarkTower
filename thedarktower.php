@@ -2,7 +2,7 @@
 function thedarktower_getmoduleinfo() {
         $info = array(
                 "name"=>"The Dark Tower",
-                "author"=>"`@c`#h`4z`%1`^6`Q0",
+                "author"=>"`@c`#h`\$z`%1`^6`Q0",
                 "version"=>"1.0",
                 "category"=>"Miscellaneous",
                 "download"=>"https://github.com/chz160/LotGD_Mod_TheDarkTower",
